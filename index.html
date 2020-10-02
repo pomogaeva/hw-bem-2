@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike - Buy now</title>
+  <!-- Stars rating -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="page">
+  <div class="container">
+
+    <img class="nike-logo" src="./images/nike-logo.png" alt="Nike Logo">
+
+    <div class="shoes">
+      <div class="shoes-left">
+        <img class="shoes-left__photo" src="images/nike-shoe.png" alt="Nike SB Stefan Janoski Max">
+        <div class="shoes-left__slider">
+          <input type="radio" name="shoe-color" id="dark-blue" class="shoes-left__color shoes-left__color--dark-blue"
+            checked>
+          <input type="radio" name="shoe-color" id="white" class="shoes-left__color shoes-left__color--white">
+          <input type="radio" name="shoe-color" id="red" class="shoes-left__color shoes-left__color--red">
+          <input type="radio" name="shoe-color" id="mint" class="shoes-left__color shoes-left__color--mint">
+        </div>
+      </div>
+
+      <div class="shoes-right">
+        <div class="shoes-right__description">
+          <h2 class="shoes-right__title">Nike SB Stefan Janoski Max</h2>
+          <p class="shoes-right__subtitle">Unisex Skateboarding Shoe</p>
+
+          <div class="shoes__rate">
+            <span class="fa fa-star shoes__rating--checked"></span>
+            <span class="fa fa-star shoes__rating--checked"></span>
+            <span class="fa fa-star shoes__rating--checked"></span>
+            <span class="fa fa-star shoes__rating"></span>
+            <span class="fa fa-star shoes__rating"></span>
+          </div>
+        </div>
+
+        <div class="order">
+          <div class="order__details">
+            <select class="order__select btn">
+              <option value="41">Size 41</option>
+              <option value="42">Size 42</option>
+              <option value="43">Size 43</option>
+            </select>
+
+            <select class="order__select btn">
+              <option value="1">Qty 1</option>
+              <option value="2">Qty 2</option>
+              <option value="3">Qty 3</option>
+            </select>
+          </div>
+
+          <button type="button" class="order__btn btn">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url('../fonts/MuseoSansRounded300.otf') format('opentype');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.page  {
+  background: url('../images/bg.png') center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Museo Sans Rounded', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 680px;
+  min-height: 390px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 32.5px rgba(0,0,0,0.82));
+  background-color: #111a28;
+}
+
+.nike-logo {
+  max-width: 70px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.shoes {
+  display: flex;
+  justify-content: space-between;
+  color: #797d84;
+}
+
+.shoes-left {
+  margin: 30px;
+}
+
+.shoes-left__photo {
+  padding: 80px 0 50px 0;
+}
+
+.shoes-left__slider {
+  margin: 10px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.shoes-left__color {
+  visibility: hidden;
+  margin-left: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.shoes-left__color::before {
+  visibility: visible; 
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: box-shadow .1s ease;
+  cursor: pointer;
+}
+
+.shoes-left__color:hover::before {
+  box-shadow: 0 0 0 3px #a1a1a5;
+}
+
+.shoes-left__color:checked::before {
+  box-shadow: 0 0 0 3px #808088;
+}
+
+.shoes-left__color--dark-blue::before {
+  background-color: #1f273f;
+}
+
+.shoes-left__color--white::before {
+  background-color: #fff;
+}
+
+.shoes-left__color--red::before {
+  background-color: #ed3333;
+}
+
+.shoes-left__color--mint::before {
+  background-color: #29e3ea;
+} 
+
+.shoes-right {
+  margin: 40px;
+}
+
+.shoes-right__description {
+  letter-spacing: 0px;
+  line-height: 26px;
+}
+
+.shoes-right__title {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.shoes-right__subtitle {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.shoes__rate {
+  margin: 20px 0 10px 0;
+}
+
+.shoes__rating {
+  color: #fff;
+  cursor: none;
+}
+
+.shoes__rating--checked {
+  color: #f7bf16;
+}
+
+.order__details {
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 18px;
+}
+
+.btn {
+  padding: 6px 10px;
+  background-color: #111a28;
+  border: 1px solid #797d84;
+  color: #797d84;
+  transition: .2s ease-in;
+}
+
+.btn:hover {
+  border: 2px solid #797d84;
+  background-color: #35445c;
+  cursor: pointer;
+}
+
+.order__select {
+  margin: 10px 8px 25px 0;
+}
+
+.order__btn {
+  width: 100%;
+  max-width: 180px;
+}
