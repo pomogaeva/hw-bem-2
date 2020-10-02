@@ -136,7 +136,7 @@
 
 .shoes__rating {
   color: #fff;
-  cursor: none;
+  cursor: default;
 }
 
 .shoes__rating--checked {
