@@ -132,6 +132,7 @@
 
 .shoes__rate {
   margin: 20px 0 10px 0;
+  cursor: default;
 }
 
 .shoes__rating {
@@ -158,8 +159,15 @@
 }
 
 .btn:hover {
-  border: 2px solid #797d84;
+  border: none;
+  box-shadow: 0 0 0 1px #797d84;
   background-color: #35445c;
+  cursor: pointer;
+}
+
+.btn:active {
+  box-shadow: 0 0 0 2px #9c9ea3;
+  background-color: #1e2a3d;
   cursor: pointer;
 }
 
